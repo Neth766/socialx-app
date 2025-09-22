@@ -1,0 +1,81 @@
+{
+  "expo": {
+    "name": "SocialX",
+    "slug": "socialx-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#6200ea"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.yourname.socialx",
+      "buildNumber": "1.0.0",
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app needs access to camera to upload photos",
+        "NSPhotoLibraryUsageDescription": "This app needs access to photo library to share images"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#6200ea"
+      },
+      "package": "com.yourname.socialx",
+      "versionCode": 1,
+      "permissions": [
+        "INTERNET",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "CAMERA"
+      ],
+      "intentFilters": [
+        {
+          "action": "SEND",
+          "category": ["DEFAULT"],
+          "data": "text/plain"
+        }
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "name": "SocialX - Social Media App",
+      "shortName": "SocialX",
+      "lang": "en",
+      "scope": "/",
+      "themeColor": "#6200ea"
+    },
+    "plugins": [
+      [
+        "expo-screen-orientation",
+        {
+          "initialOrientation": "PORTRAIT"
+        }
+      ],
+      [
+        "expo-font",
+        {
+          "fonts": ["./assets/fonts/custom-font.ttf"]
+        }
+      ]
+    ],
+    "scheme": "socialx",
+    "privacy": "public",
+    "platforms": ["ios", "android", "web"],
+    "githubUrl": "https://github.com/yourusername/socialx-app",
+    "description": "A modern 4-tab social media app with authentication, feed interactions, image gallery, and user profiles built with React Native and Expo.",
+    "keywords": ["social media", "react native", "expo", "mobile app", "feed", "authentication"],
+    "primaryColor": "#6200ea",
+    "extra": {
+      "apiUrl": "https://api.socialx.com",
+      "environment": "development"
+    }
+  }
+}

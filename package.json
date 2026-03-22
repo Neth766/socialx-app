@@ -1,6 +1,7 @@
 {
-  "name": "social-app",
+  "name": "socialx-app",
   "version": "1.0.0",
+  "description": "Expo-based React Native social media prototype with mock authentication, animated navigation, theme switching, and interactive feed flows.",
   "main": "index.js",
   "scripts": {
     "start": "expo start",
@@ -8,6 +9,25 @@
     "ios": "expo start --ios",
     "web": "expo start --web"
   },
+  "keywords": [
+    "react-native",
+    "expo",
+    "mobile-app",
+    "social-media",
+    "react-navigation",
+    "moti",
+    "portfolio-project"
+  ],
+  "author": "Nethaniel Johan",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Neth766/socialx-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Neth766/socialx-app/issues"
+  },
+  "homepage": "https://github.com/Neth766/socialx-app",
   "dependencies": {
     "@expo/vector-icons": "^15.0.2",
     "@react-navigation/bottom-tabs": "^7.4.7",
@@ -28,9 +48,5 @@
     "react-native-vector-icons": "^10.3.0"
   },
   "private": true,
-  "description": "",
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "type": "commonjs"
 }

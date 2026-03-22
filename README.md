@@ -1,256 +1,104 @@
-# SocialX - React Native Social Media App
+# SocialX
 
-A modern, feature-rich social media application built with React Native and Expo. SocialX provides users with an intuitive platform for sharing posts, discovering images, and connecting with others through an elegant, customizable interface.
+SocialX is a React Native and Expo social media prototype focused on mobile interaction design, state management, and navigation patterns. The project combines a mock authentication flow, an interactive feed, image discovery, profile views, settings, and motion-rich transitions in a single portable demo app.
 
-## Features
+![SocialX screen map](assets/socialx-screen-map.svg)
 
-### 🔐 Authentication
-- Secure email/password login
-- Google OAuth integration
-- Demo account access
-- Persistent user sessions
+## What this project demonstrates
 
-### 📱 Social Features
-- Interactive feed with posts, likes, and comments
-- Real-time engagement (likes, comments, shares)
-- User profiles with statistics
-- Post sharing functionality
+- Building a multi-screen mobile experience with Expo and React Native.
+- Combining drawer and bottom-tab navigation without losing UX clarity.
+- Managing shared app state with lightweight React Context providers.
+- Designing animated, theme-aware interfaces for a portfolio-ready frontend.
+- Shipping a realistic prototype quickly with clear room for production hardening.
 
-### 🖼️ Media
-- Image discovery gallery
-- Grid-based image browsing
-- Full-screen image viewer with modal
-- Responsive image loading
+## Feature highlights
 
-### 🎨 User Experience
-- Dark/Light theme toggle
-- Smooth animations with Moti
-- Modern UI with glassmorphism effects
-- Responsive design for all screen sizes
-- Drawer navigation with custom content
-- Bottom tab navigation with raised design
+- Mock email/password authentication with a simulated Google sign-in path.
+- Feed interactions for likes, comments, and share actions.
+- Image discovery gallery with modal previews.
+- Profile and settings screens with theme switching.
+- Help and support content embedded directly into the app.
+- Motion-driven interface touches using Moti and React Native Reanimated.
 
-### ⚙️ Settings & Customization
-- Push notification preferences
-- Privacy settings
-- Theme customization
-- Profile management
+## Architecture overview
 
-### 📋 Additional Features
-- Help & Support with FAQ
-- Privacy Policy
-- About section
-- Contact support options
+![SocialX architecture](assets/socialx-architecture.svg)
 
-## Screenshots
+SocialX currently keeps most UI logic inside [App.js](App.js) so the entire prototype is easy to review in one place. For an interview, that is a good talking point: the next production step would be extracting screens, components, hooks, and service layers into dedicated modules.
 
-> Add screenshots of your app here
+## Demo credentials
 
-## Tech Stack
+Use either of the following accounts in the demo build:
 
-- **Framework:** React Native with Expo
-- **Navigation:** React Navigation v6 (Stack, Tab, Drawer)
-- **Animations:** Moti (Reanimated 2)
-- **Icons:** Expo Vector Icons (Ionicons)
-- **State Management:** React Context API
-- **Authentication:** Custom auth with mock providers
-- **Styling:** StyleSheet with dynamic theming
+- `user@example.com` / `123456`
+- `alice@example.com` / `123456`
 
-## Prerequisites
+## Local development
 
-Before running this project, make sure you have:
-
-- Node.js (v14 or higher)
-- npm or yarn
-- Expo CLI (`npm install -g expo-cli`)
-- Android Studio (for Android development)
-- Xcode (for iOS development, macOS only)
-
-## Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/Neth766/socialx-app.git
-   cd socialx-app
-   ```
-
-2. **Install dependencies**
-   ```bash
-   npm install
-   # or
-   yarn install
-   ```
-
-3. **Start the development server**
-   ```bash
-   expo start
-   ```
-
-4. **Run on device/emulator**
-   - Press `a` for Android emulator
-   - Press `i` for iOS simulator
-   - Scan QR code with Expo Go app on your phone
-
-## How It Works
-
-### Architecture Overview
-SocialX is built using React Native with Expo, following a component-based architecture with Context API for state management. The app uses a single-file structure (App.js) containing all components and logic for simplicity.
-
-### Authentication Flow
-1. **Login Screen**: Users authenticate with email/password or Google OAuth
-2. **Mock Authentication**: The app uses a mock user database for demonstration
-3. **Session Management**: User state is maintained through React Context
-4. **Auto-login**: Session persistence simulated with loading states
-
-### Navigation Structure
-- **Drawer Navigator**: Main navigation with custom drawer content
-- **Tab Navigator**: Bottom tabs for primary sections (Feed, Images, Profile, Settings)  
-- **Stack Navigation**: Modal screens for detailed views
-
-### Data Flow
-1. **Initial Data**: Mock posts and user data loaded on app start
-2. **Real-time Updates**: Local state updates simulate real-time interactions
-3. **Theme Management**: Global theme context provides dark/light mode switching
-4. **User Interactions**: Likes, comments, and shares update local state immediately
-
-### Key Components
-- **PostItem**: Individual post component with interactions
-- **CustomDrawer**: Animated drawer with user info and quick settings
-- **ThemeProvider**: Global theme management with context
-- **AuthProvider**: User authentication and session management
-
-### Animation System
-- **Moti Library**: Smooth entrance animations for components
-- **Interactive Feedback**: Button press animations and loading states
-- **Theme Transitions**: Smooth color transitions when switching themes
-- **Modal Animations**: Slide and fade animations for overlays
-
-### Image Handling
-- **Grid Display**: 2-column grid layout for image discovery
-- **Modal Viewer**: Full-screen image viewing with gesture support
-- **Placeholder Images**: Uses Picsum and Pravatar for demo content
-- **Lazy Loading**: Images load on-demand for performance
-
-## Configuration
-
-### Expo Configuration (app.json)
-The app uses Expo's managed workflow with custom configuration for:
-- App icons and splash screen
-- Orientation settings
-- Platform-specific configurations
-- Build settings
-
-### Environment Setup
-No additional environment variables are required for the demo version. For production deployment, you may want to configure:
-- Firebase for authentication
-- Cloud storage for images
-- Push notification services
-
-## Usage
-
-### Demo Accounts
-For testing purposes, use these demo credentials:
-- **Email:** `user@example.com`
-- **Password:** `123456`
-
-Alternative demo account:
-- **Email:** `alice@example.com`
-- **Password:** `123456`
-
-### Navigation
-- **Drawer Navigation:** Pull from left edge or tap menu icon
-- **Bottom Tabs:** Access main sections (Feed, Images, Profile, Settings)
-- **Theme Toggle:** Available in settings or quick toggle in drawer
-
-## Development
-
-### Adding New Features
-1. Create new components in appropriate sections
-2. Update navigation if needed
-3. Add proper theming support
-4. Include animations for better UX
-5. Test on both platforms
-
-### Styling Guidelines
-- Use the theme context for consistent colors
-- Follow the existing elevation/shadow patterns
-- Maintain responsive design principles
-- Test dark/light themes
-
-### State Management
-The app uses React Context for:
-- Authentication state
-- Theme management
-- User preferences
-
-## Building for Production
-
-### Android
 ```bash
-expo build:android
+git clone https://github.com/Neth766/socialx-app.git
+cd socialx-app
+npm install
+npx expo start
 ```
 
-### iOS
-```bash
-expo build:ios
+From the Expo developer menu:
+
+- press `a` for Android
+- press `i` for iOS on macOS
+- press `w` to launch the web preview
+- scan the QR code with Expo Go on a physical device
+
+## Tech stack
+
+- React Native
+- Expo
+- React Navigation
+- Moti
+- React Context API
+- Expo Vector Icons
+
+## Repository structure
+
+```text
+socialx-app/
+|-- App.js
+|-- index.js
+|-- app.json
+|-- assets/
+|-- DOCUMENTATION.md
+|-- CONTRIBUTING.md
+|-- CHANGELOG.md
+|-- package.json
 ```
 
-### Standalone Apps
-```bash
-# For both platforms
-expo build:android -t apk
-expo build:ios -t archive
-```
+## Product flow
 
-## Contributing
+1. The user lands on the login screen and authenticates with mock credentials.
+2. Shared context initializes theme and session state.
+3. The drawer and tabs expose Feed, Images, Profile, Settings, and Help experiences.
+4. Feed and gallery interactions update local state immediately for a responsive demo.
+5. Theme changes ripple through the app via the Theme context.
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+## Design notes
 
-### Development Guidelines
-- Follow React Native best practices
-- Maintain consistent code formatting
-- Add proper error handling
-- Include comments for complex logic
-- Test on both Android and iOS
+This repo is intentionally a frontend prototype, not a full backend product. Authentication, posts, profiles, and images are powered by mock data so the focus stays on navigation, UI composition, and mobile interaction design. That makes it a strong portfolio piece for discussing:
 
-## Known Issues
+- product thinking
+- component architecture
+- rapid prototyping
+- visual polish
+- tradeoffs between prototype speed and production structure
 
-- Mock authentication for demo purposes
-- Limited offline functionality
-- Images are loaded from external sources
+## Recommended next improvements
 
-## Future Enhancements
-
-- [ ] Real backend integration
-- [ ] Push notifications
-- [ ] Offline support
-- [ ] Image upload functionality
-- [ ] Video support
-- [ ] Real-time messaging
-- [ ] Advanced user search
-- [ ] Story features
-- [ ] Post scheduling
+- Split [App.js](App.js) into feature-based folders.
+- Replace mock auth and post data with a real API.
+- Add automated UI tests for core flows.
+- Persist user preferences and sessions on-device.
+- Add image upload and real-time notifications.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Support
-
-If you encounter any issues or have questions:
-
-- Create an issue in this repository
-- Contact: nethk1006@gmail.com
-- Documentation: Attached in repository
-
-## Support
-
-I want to express my heartfelt gratitude to my family and friends who provided unwavering support and encouragement throughout the development of SocialX. Their belief in my vision and constant motivation made this project possible. Special thanks to the React Native and Expo communities for creating such powerful tools that enable developers like me to bring ideas to life.
-
----
-
-**Made with ❤️ by Nethaniel**
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.

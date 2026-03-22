@@ -1,0 +1,41 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="720" rx="32" fill="#FFF7ED"/>
+  <rect x="36" y="36" width="1208" height="648" rx="24" fill="#FFFFFF" stroke="#FDBA74" stroke-width="2"/>
+  <text x="72" y="100" fill="#9A3412" font-family="Segoe UI, Arial, sans-serif" font-size="42" font-weight="700">SocialX Screen Map</text>
+  <text x="72" y="140" fill="#C2410C" font-family="Segoe UI, Arial, sans-serif" font-size="22">How the prototype moves from onboarding into the core social experience</text>
+
+  <rect x="88" y="230" width="220" height="180" rx="24" fill="#F97316"/>
+  <text x="126" y="300" fill="#FFFFFF" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="700">Login</text>
+  <text x="126" y="340" fill="#FFEDD5" font-family="Segoe UI, Arial, sans-serif" font-size="20">Email/password</text>
+  <text x="126" y="370" fill="#FFEDD5" font-family="Segoe UI, Arial, sans-serif" font-size="20">Simulated Google sign-in</text>
+
+  <rect x="382" y="210" width="270" height="220" rx="24" fill="#2563EB"/>
+  <text x="422" y="290" fill="#FFFFFF" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="700">Drawer Shell</text>
+  <text x="422" y="332" fill="#DBEAFE" font-family="Segoe UI, Arial, sans-serif" font-size="20">Custom drawer content</text>
+  <text x="422" y="362" fill="#DBEAFE" font-family="Segoe UI, Arial, sans-serif" font-size="20">Theme toggle + shortcuts</text>
+
+  <rect x="744" y="170" width="416" height="420" rx="28" fill="#0F766E"/>
+  <text x="786" y="238" fill="#F0FDFA" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="700">Main Tabs</text>
+
+  <rect x="786" y="280" width="150" height="110" rx="18" fill="#14B8A6"/>
+  <text x="830" y="342" fill="#F0FDFA" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">Feed</text>
+
+  <rect x="968" y="280" width="150" height="110" rx="18" fill="#14B8A6"/>
+  <text x="1005" y="342" fill="#F0FDFA" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">Images</text>
+
+  <rect x="786" y="420" width="150" height="110" rx="18" fill="#14B8A6"/>
+  <text x="820" y="482" fill="#F0FDFA" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">Profile</text>
+
+  <rect x="968" y="420" width="150" height="110" rx="18" fill="#14B8A6"/>
+  <text x="993" y="482" fill="#F0FDFA" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">Settings</text>
+
+  <rect x="500" y="500" width="220" height="92" rx="20" fill="#7C3AED"/>
+  <text x="550" y="555" fill="#F5F3FF" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">Help / FAQ</text>
+
+  <path d="M308 320H382" stroke="#EA580C" stroke-width="8" stroke-linecap="round"/>
+  <path d="M652 320H744" stroke="#2563EB" stroke-width="8" stroke-linecap="round"/>
+  <path d="M610 430V500" stroke="#7C3AED" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="345" cy="320" r="12" fill="#EA580C"/>
+  <circle cx="699" cy="320" r="12" fill="#2563EB"/>
+  <circle cx="610" cy="465" r="12" fill="#7C3AED"/>
+</svg>
